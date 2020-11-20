@@ -23,7 +23,7 @@ spec:
         tier: backend
     spec:
       containers:
-        - image: $DOCKERHUB_NAMESPACE/$APP_NAME:latest
+        - image: $DOCKERHUB_NAMESPACE/Score:latest
           imagePullPolicy: Always
           name: score_project
           ports:
