@@ -1,5 +1,5 @@
 FROM sapmachine/jdk11:latest
 MAINTAINER abc
-ADD Score-4444/target/Score-4444-1.0-SNAPSHOT.jar /Score.jar
+ADD Score-4444/target/Score-4444-1.0-SNAPSHOT.jar /score.jar
 VOLUME /opt
-ENTRYPOINT ["java","-jar","/Score.jar","&"]
+ENTRYPOINT ["java","-jar","/score.jar","&"]
