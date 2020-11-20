@@ -6,7 +6,7 @@ metadata:
     component: score
     tier: backend
   name: score
-  namespace: score-platform
+  namespace: score-project
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
