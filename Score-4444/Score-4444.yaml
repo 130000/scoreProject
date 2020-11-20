@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   labels:
     app: kubesphere
-    component: score_project
+    component: score
     tier: backend
-  name: score_project
+  name: score
   namespace: score-platform
 spec:
   progressDeadlineSeconds: 600
@@ -13,19 +13,19 @@ spec:
   selector:
     matchLabels:
       app: kubesphere
-      component: score_project
+      component: score
       tier: backend
   template:
     metadata:
       labels:
         app: kubesphere
-        component: score_project
+        component: score
         tier: backend
     spec:
       containers:
         - image: $DOCKERHUB_NAMESPACE/score:latest
           imagePullPolicy: Always
-          name: score_project
+          name: score
           ports:
             - containerPort: 8106
               protocol: TCP
